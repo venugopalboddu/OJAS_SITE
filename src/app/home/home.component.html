@@ -1,0 +1,291 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+      
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="index.html"><img src="assets/img/oj.png" width="120px"></a>
+              </div>
+      
+         
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item active"><a routerLink="/home">Home</a></li>
+              <li><a routerLink="/about">About Us</a></li>
+              <li><a routerLink="/career">Careers</a></li>
+              <li><a routerLink="/client">Clients</a></li>
+              <li><a routerLink="/team">Team</a></li>
+              <li><a routerLink="/contact">Contact Us</a></li>
+              <li class="btn-trial"><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--/ Navigation bar-->
+      <!--Modal box-->
+      <div class="modal fade" id="login" role="dialog">
+        <div class="modal-dialog modal-sm">
+      
+          <!-- Modal content no 1-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title text-center form-title">Login</h4>
+            </div>
+            <div class="modal-body padtrbl">
+      
+              <div class="login-box-body">
+                <p class="login-box-msg">Sign in to start your session</p>
+                <div class="form-group">
+                  <form name="" id="loginForm">
+                    <div class="form-group has-feedback">
+                      <!----- username -------------->
+                      <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
+                      <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
+                      <!---Alredy exists  ! -->
+                      <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                      <!----- password -------------->
+                      <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+                      <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
+                      <!---Alredy exists  ! -->
+                      <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="checkbox icheck">
+                          <label>
+                                    <input type="checkbox" id="loginrem" > Remember Me
+                                  </label>
+                        </div>
+                      </div>
+                      <div class="col-xs-12">
+                        <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      <!--/ Modal box-->
+      <!--Banner-->
+      
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 50px">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+    
+          <div class="item active">
+            <img src="assets/img/slide1.jpg" style="width:100%;">
+            <div class="carousel-caption">
+              <h2 style="color: aliceblue">Mobile App Development & Testing</h2>
+             </div>
+          </div>
+    
+          <div class="item">
+            <img src="assets/img/slide2.jpg" style="width:100%;">
+            <div class="carousel-caption">
+              <h2 style="color: aliceblue">IT Services Application Development</h2>
+             
+            </div>
+          </div>
+        
+          <div class="item">
+            <img src="assets/img/slide3.jpg" style="width:100%;">
+            <div class="carousel-caption">
+              <h2 style="color: aliceblue">Staff Augmentation</h2>
+            </div>
+          </div>
+      
+        </div>
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!--/ Banner-->
+     
+      <!--Pricing-->
+      <section id="feature" class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="header-section text-center">
+              <h2 style="color: #1d62a7;"><b>About <span style="color: #EFAF4E;">Ojas</span> Innovative Technologies</b></h2>
+              <p>Ojas is a Cost Effective IT Services Company with 8 years of rich experience in serving its customers with a team of 500+ IT Professionals.  We’re one of the fastest growing companies in India providing Services in Application Dev & Support, Identity Governance, Testing Services, Mobile Dev & Testing, Staff Augmentation and Staffing Services to our customers. </p>
+              <hr class="bottom-line">
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="price-table">
+                <!-- Plan  -->
+                <div class="pricing-head" style="height: 315px">
+                  <h4 style="color: #EFAF4E;"><b>It Services</b></h4>
+                  <span>Ojas helps its customers to build robust business applications with quality, but yet cost effective. With more than 3 years of experience as an Organization and 15+ Years of experience inferred from the Leadership of Ojas, we strive to provide Cost Effective IT services to our customers enabling them to take the cost advantage to be competitive in their business.</span>
+                </div>
+      
+                <!-- Plean Detail -->
+                <div class="price-in mart-15">
+                  <a routerLink="" class="btn btn-bg green btn-block">Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="price-table">
+                <!-- Plan  -->
+                <div class="pricing-head" style="height: 315px">
+                  <h4 style="color: #EFAF4E;"><b>Identity Governance</b></h4>
+                  <span>Identity management is an important part of the Enterprise Security. Identity Management systems will add an additional layer of protection by ensuring user access policies and rules. Identity Management provides IT Managers with tools and technologies for controlling user access to critical information within an organization. It easier to manage the Lifecycle for Organizations.</span>
+                </div>
+      
+                <!-- Plean Detail -->
+                <div class="price-in mart-15">
+                  <a routerLink="" class="btn btn-bg yellow btn-block">Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="price-table">
+                <!-- Plan  -->
+                <div class="pricing-head" style="height: 315px">
+                  <h4 style="color: #EFAF4E;"><b>Emerging Technologies</b></h4>
+                  <span>We at Ojas continues to invest in the Emerging Technologies to partner with our Customers to make sure they get the right support from us.  Ojas is investing in SAP HANA, MuleSoft AnyPoint and Cloud as a Service to be competitive.  </span>
+                </div>
+      
+                <!-- Plean Detail -->
+                <div class="price-in mart-15">
+                  <a routerLink="" class="btn btn-bg red btn-block">Details</a>
+                </div>
+              </div>
+            </div>
+          </div><br/>
+
+          <div class="row">
+            
+            <div class="col-md-4 col-sm-4">
+              <div class="price-table">
+                <!-- Plan  -->
+                <div class="pricing-head" style="height: 315px">
+                  <h4 style="color: #EFAF4E;"><b>Testing As a Service</b></h4>
+                  <span class="text-center">Quality is one thing in any Software Application, which can’t be compromised…as a small bug can take a big toll on your business.  Our Quality Team understand the business criticality while working on your Application Testing.   Our strong expertise in Manual and Automation Tools coupled with Domain knowledge add value to our Customer’s business applications.</span>
+                </div>
+      
+                <!-- Plean Detail -->
+                <div class="price-in mart-15">
+                  <a routerLink="" class="btn btn-bg green btn-block">Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="price-table">
+                <!-- Plan  -->
+                <div class="pricing-head" style="height: 315px">
+                  <h4 style="color: #EFAF4E;"><b>Mobile App</b></h4>
+                  <span>Take Advantage of Mobility for your Business to provide Services on the Go and be competitive in today’s Business World of rapid changes. In this Smart Phone era, Mobility is the only secret for Success. Ojas helps you in creating Mobile Applications in Android, IoS Platforms suiting your business needs with effective cost and scalable solutions. </span>
+                </div>
+      
+                <!-- Plean Detail -->
+                <div class="price-in mart-15">
+                  <a routerLink="" class="btn btn-bg yellow btn-block">Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="price-table">
+                <!-- Plan  -->
+                <div class="pricing-head" style="height: 315px">
+                  <h4 style="color: #EFAF4E;"><b>Staff Augmentation</b></h4>
+                  <span>Shortage of Skilled Resources? Need Resources in Specific Location?  Joining Worries? Attrition Issues? Short Term Projects? <br/>Ojas can help you solve all these issues and deploy our Skilled IT Resources across India for the duration you ask for….yet Cost Effective.</span>
+                </div>
+      
+                <!-- Plean Detail -->
+                <div class="price-in mart-15">
+                  <a routerLink="" class="btn btn-bg red btn-block">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+       
+        
+      </section>
+      <!--/ Pricing-->
+    
+      <!--/ Contact-->
+      <!--Footer-->
+      <footer id="footer" class="footer">
+        <div class="container text-center">
+    
+       
+      <div class="row">
+        <div class="col-md-3">
+          <h4 style="color: #EFAF4E;">Los Angeles, USA</h4>
+          <p>Ojas Innovative Technologies Inc</p>
+          
+  <p>28422 Constellation Road,<br>
+   
+  Suite # 211, Valencia, CA 91355-3027<br>
+  <i class="fa fa-phone"></i> +1 (310) 227 5909 (Direct)<br>
+  <i class="fa fa-envelope"></i> <a href="sales@ojas-it.com" style="color: #EFAF4E; text-decoration: none;padding: 1em">sales@ojas-it.com</a></p>
+         </div>
+       
+       
+  <div class="col-md-3">
+         <h4 style="color: #EFAF4E;">Hyderabad, INDIA</h4>
+         <p>Ojas Innovative Technologies Pvt Ltd</p>
+              <p> Block C, Floor 9, MJR Magnifique,
+             Raidurgam<br>
+              Hyderabad - 500008, Telangana<br>
+             <i class="fa fa-phone"></i> +91 40 41430000<br>
+             <i class="fa fa-envelope"></i> <a href="mailto:sales@ojas-it.com" style="color: #EFAF4E; text-decoration: none;padding: 1em">sales@ojas-it.com</a></p>
+         </div>
+  <div class="col-md-3">
+         <h4 style="color: #EFAF4E;">London,UK</h4>
+         <p>Ojas Innovative Technologies Ltd</p>
+              <p> Coming Soon</p>
+              <p><i class="fa fa-envelope"></i> <a href="mailto:sales@ojas-it.com" style="color: #EFAF4E; text-decoration: none;padding: 1em">sales@ojas-it.com</a></p>
+         </div>
+         <div class="col-md-3">
+         <h4 style="color: #EFAF4E;">Dubai, UAE</h4>
+         <p>Ojas Innovative Technologies FZ-LLC</p>
+              <p> Dubai Internet City,
+             DIC Buildinq 1, <br> Ground Floor, DIC POI-BO1-G-EX14<br>
+              Dubai, UAE<br>
+              <i class="fa fa-envelope"></i> <a href="mailto:sales@ojas-it.com" style="color: #EFAF4E; text-decoration: none;padding: 1em">sales@ojas-it.com</a>
+         </div>
+      </div>
+
+        
+          <!-- End newsletter-form -->
+          <ul class="social-links">
+            <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+            <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+            <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+            <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
+            <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+          </ul>
+          ©2019 Ojas Innovative Technologies pvt ltd. All rights reserved
+        </div>
+      </footer>
+      <!--/ Footer-->
+      
+      

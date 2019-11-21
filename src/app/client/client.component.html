@@ -1,0 +1,204 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+      
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="index.html"><img src="assets/img/oj.png" width="120px"></a>
+              </div>
+      
+         
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a routerLink="/home">Home</a></li>
+              <li><a routerLink="/about">About Us</a></li>
+              <li><a routerLink="/career">Careers</a></li>
+              <li class="nav-item active"><a routerLink="/client">Clients</a></li>
+              <li><a routerLink="/team">Team</a></li>
+              <li><a routerLink="/contact">Contact Us</a></li>
+              <li class="btn-trial"><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--/ Navigation bar-->
+      <!--Modal box-->
+      <div class="modal fade" id="login" role="dialog">
+        <div class="modal-dialog modal-sm">
+      
+          <!-- Modal content no 1-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title text-center form-title">Login</h4>
+            </div>
+            <div class="modal-body padtrbl">
+      
+              <div class="login-box-body">
+                <p class="login-box-msg">Sign in to start your session</p>
+                <div class="form-group">
+                  <form name="" id="loginForm">
+                    <div class="form-group has-feedback">
+                      <!----- username -------------->
+                      <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
+                      <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
+                      <!---Alredy exists  ! -->
+                      <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                      <!----- password -------------->
+                      <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+                      <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
+                      <!---Alredy exists  ! -->
+                      <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="checkbox icheck">
+                          <label>
+                                    <input type="checkbox" id="loginrem" > Remember Me
+                                  </label>
+                        </div>
+                      </div>
+                      <div class="col-xs-12">
+                        <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      <!--/ Modal box-->
+      <!--Banner-->
+      <section class="banner_area">
+          <div class="bg-color">
+        <div class="container">
+          <div class="banner-text text-center">
+            <div class="text-border">
+              <h2 class="text-dec">Clients</h2>
+            </div>
+           
+          </div>
+        </div>
+        </div>
+    </section>
+    
+      <!--Courses-->
+      <section id="courses" class="section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="header-section text-center">
+              <h2 style="color: #1d62a7;"><b>Our Top Customers</b></h2>
+              <hr class="bottom-line">
+              <p>We give every client the same dedication and commitment.</p>
+            </div>
+          </div>
+        </div><br>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-4">
+              
+                <img src="assets/img/tcs.png" class="img-responsive">
+                
+              
+              
+            </div>
+            <div class="col-md-4">
+              
+                <img src="assets/img/cog.png" class="img-responsive">
+                
+            </div>
+            <div class="col-md-4">
+            
+                <img src="assets/img/cap.jpg" class="img-responsive">
+                
+            </div>
+
+            
+          </div><br><br>
+          <div class="row text-center">
+              <div class="col-md-4">
+              
+                  <img src="assets/img/tech.png" class="img-responsive">
+                  
+              </div>
+              <div class="col-md-4">
+                
+                  <img src="assets/img/quick.jpg" width="150px" class="img-responsive">
+                  
+              </div>
+              <div class="col-md-4">
+                
+                  <img src="assets/img/ama.png" class="img-responsive">
+                  
+              </div>
+          </div>
+        </div>
+      </section>
+      <!--/ Courses-->
+     
+      <!--Footer-->
+      <footer id="footer" class="footer">
+          <div class="container text-center">
+      
+         
+        <div class="row">
+          <div class="col-md-3">
+            <h4 style="color: #EFAF4E;">Los Angeles, USA</h4>
+            <p>Ojas Innovative Technologies Inc</p>
+            
+    <p>28422 Constellation Road,<br>
+     
+    Suite # 211, Valencia, CA 91355-3027<br>
+    <i class="fa fa-phone"></i> +1 (310) 227 5909 (Direct)<br>
+    <i class="fa fa-envelope"></i> <a href="sales@ojas-it.com" style="color: #EFAF4E; text-decoration: none;padding: 1em">sales@ojas-it.com</a></p>
+           </div>
+         
+         
+    <div class="col-md-3">
+           <h4 style="color: #EFAF4E;">Hyderabad, INDIA</h4>
+           <p>Ojas Innovative Technologies Pvt Ltd</p>
+                <p> Block C, Floor 9, MJR Magnifique,
+               Raidurgam<br>
+                Hyderabad - 500008, Telangana<br>
+               <i class="fa fa-phone"></i> +91 40 41430000<br>
+               <i class="fa fa-envelope"></i> <a href="mailto:sales@ojas-it.com" style="color: #EFAF4E; text-decoration: none;padding: 1em">sales@ojas-it.com</a></p>
+           </div>
+    <div class="col-md-3">
+           <h4 style="color: #EFAF4E;">London,UK</h4>
+           <p>Ojas Innovative Technologies Ltd</p>
+                <p> Coming Soon</p>
+                <p><i class="fa fa-envelope"></i> <a href="mailto:sales@ojas-it.com" style="color: #EFAF4E; text-decoration: none;padding: 1em">sales@ojas-it.com</a></p>
+           </div>
+           <div class="col-md-3">
+           <h4 style="color: #EFAF4E;">Dubai, UAE</h4>
+           <p>Ojas Innovative Technologies FZ-LLC</p>
+                <p> Dubai Internet City,
+               DIC Buildinq 1, <br> Ground Floor, DIC POI-BO1-G-EX14<br>
+                Dubai, UAE<br>
+                <i class="fa fa-envelope"></i> <a href="mailto:sales@ojas-it.com" style="color: #EFAF4E; text-decoration: none;padding: 1em">sales@ojas-it.com</a>
+           </div>
+        </div>
+  
+          
+            <!-- End newsletter-form -->
+            <ul class="social-links">
+              <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+              <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+              <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+              <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
+              <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+            </ul>
+            ©2019 Ojas Innovative Technologies pvt ltd. All rights reserved
+          </div>
+        </footer>
+      <!--/ Footer-->
+      
+      
