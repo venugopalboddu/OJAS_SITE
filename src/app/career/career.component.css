@@ -2,3 +2,18 @@ thead
 {
     background-color: aquamarine;
 }
+
+.err{
+
+    color: red;
+}
+
+.has-danger{
+
+    border: solid 1px red;
+}
+
+.has-success{
+
+    border: 1px greenyellow;
+}
