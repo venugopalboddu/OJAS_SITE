@@ -43,7 +43,7 @@
                         </div>
                        
                     </div>
-    
+      
                     <div class="form-group">
                         <label for="password">Password<span style="color:red">*</span>:</label>
                         <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" [ngClass]="{ 'has-danger': (f.submitted || password.touched) && password.invalid, 'is-valid': (f.submitted || password.touched) && password.valid  }" required/>
@@ -56,6 +56,7 @@
                         <button class="btn btn-success">Submit</button>
                     </div>
                 </form>
+               
                 </div>
             </div>
         </div>
@@ -124,10 +125,15 @@
                     </div>
                     <div class="form-group">
                         <button class="btn btn-success"><b>Send</b></button>&nbsp;
-                        <!-- <button class="btn btn-success" (click)="contactForm.reset()"><b>Reset</b></button> -->
                     </div>
-                    
                 </form>
+                <div class="alert alert-success" role="alert" *ngIf="status1">
+                  <strong>{{msg}}</strong>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  </div>
+               
               
                 </div>
               </div>

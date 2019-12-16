@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   submitted = false;
+  msg:any;
+  status1: boolean = false;
    constructor(private fb: FormBuilder, private router: Router, private s: ContactService) { }
 
   ngOnInit() {
@@ -25,19 +27,23 @@ export class ContactComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-
+    let contactDetails = {
+      name: this.contactForm.controls['name'].value,
+      email: this.contactForm.controls['email'].value,
+      message: this.contactForm.controls['message'].value
+    }
 
     if (this.contactForm.invalid) {
       return;
     }
-    alert('You message has been successfully sent.');
-    // this.s.postData(this.contactForm.value).subscribe((res) => {
-    //   console.log(res);
-    // });
-
+    this.s.postData(contactDetails).subscribe((res) => {
+      console.log(res);
+    });
+    this.msg = "You message has been sent successfully. We will get back to you soon!";
+    this.contactForm.reset();
+    this.submitted = false;
+    this.status1 = true;
   }
-
-
   model: any = { };
 
   loginSubmit(f: NgForm) {
